@@ -1,18 +1,19 @@
 import Header from "./components/Header";
 import Prototypes from "./components/Prototypes";
-import Order from "./components/Order";
+import Orders from "./components/Orders";
 import Footer from "./components/Footer";
+import AppStateProvider from "./providers/AppStateProvider";
 
 function App() {
   return (
-    <>
+    <AppStateProvider>
       <Header />
-      <div className='container'>
+      <div className="container">
         <Prototypes />
-        <Order />
+        <Orders />
         <Footer />
       </div>
-    </>
+    </AppStateProvider>
   );
 }
 
